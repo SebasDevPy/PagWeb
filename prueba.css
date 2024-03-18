@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body.links {
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+}
+
 h1 {
     text-align: center;
     font-weight: bold;
@@ -88,3 +93,4 @@ h2 {
     cursor: pointer;
     float: right;
 }
+
