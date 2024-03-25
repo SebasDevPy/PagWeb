@@ -3,15 +3,45 @@
 <head>
     <link rel="stylesheet" href="prueba.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contacto</title>
 </head>
 <body>
+    <br>
+    <br>
+    <form id="myForm">
+        <select id="mySelect">
+          <option value="Links.html">Links</option>
+          <option value="Acercade.html">Acerca de</option>
+          <option value="index.html">Pagina principal</option>
+          <option value="Contacto.html">Contacto</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          window.location.href = x;
+        }
+    </script>
     <h1 style="text-align: left;"><u><b>Contacto:</b></u></h1>
     <ul>
         <li><b>Nombre:</b> Sebastian Castiñeiras</li>
         <li><b>Mail:</b> sebas_figura21@hotmail.com</li>
         <li><b>Github:</b> SebasDevPy </li>
+        <br>
+        <li><b>Nombre:</b> Agustin Luzuriaga</li>
+        <li><b>Mail:</b> agustin.luzuriaga103@gmail.com</li>
+        <li><b>Github:</b> AgusLuzu2004</li>
+        <br>
+        <li><b>Nombre:</b> Gonzalo Rodriguez</li>
+        <li><b>Mail:</b> gonzalo.rodrgz@gmail.com</li>
+        <li><b>Github:</b>  </li>
+        <br>
+        <li><b>Nombre:</b>Jorge Vitale</li>
+        <li><b>Mail:</b>vitalevargasjorge@gamil.com</li>
+        <li><b>Github:</b> SebasDevPy </li>
+
     </ul>
 </body>
-</html>
