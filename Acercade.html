@@ -3,12 +3,29 @@
 <head>
     <link rel="stylesheet" href="prueba.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Acerca de</title>
 </head>
 <body>
+    <br>
+    <br>
+    <form id="myForm">
+        <select id="mySelect">
+          <option value="Links.html">Links</option>
+          <option value="Acercade.html">Acerca de</option>
+          <option value="index.html">Pagina principal</option>
+          <option value="Contacto.html">Contacto</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          window.location.href = x;
+        }
+    </script>
     <h1 style="text-align: left;"><u><b>Acerca de:</b></u></h1>
 
     <p style="text-align:justify;">Esta página ha sido creado para que, todos aquellos que han comenzado recientemente en el mundo de la creación de paginas web utilizando HTML puedan obtener información, guias de ayuda y acompañamiento en el proceso de auto-crecimiento personal en un camino arduo, difícil pero satisfactorio hacia el manejo tanto de backend como de frontend utlizando HTML, CSS y Python.<br>Nos ayudaremos entre todos a convertirnos en unos muy capaces "FullStackers".</p>
 </body>
-</html>
