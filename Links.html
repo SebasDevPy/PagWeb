@@ -4,10 +4,28 @@
     <link rel="stylesheet" type="text/css" href="prueba.css">
     <link rel="stylesheet" href="prueba.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Descargas</title>
 </head>
 <body>
+    <br>
+    <br>
+    <form id="myForm">
+        <select id="mySelect">
+          <option value="Links.html">Links</option>
+          <option value="Acercade.html">Acerca de</option>
+          <option value="index.html">Pagina principal</option>
+          <option value="Contacto.html">Contacto</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          window.location.href = x;
+        }
+    </script>
     <body class="links">
     <h1 style="text-align: left;"><u><b>VisualStudio:</b></u></h1>
 
