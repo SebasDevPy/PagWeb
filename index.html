@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="prueba.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comenzamos</title>
 </head>
 <body>
@@ -11,6 +11,25 @@
     <button class="miBoton2"><a href="Acercade.html" target="_blank">Acerca de</a></button>
     <button class="miBoton2"><a href="Links.html" target="_blank">Links</a></button>
     <button class="miBoton3"><a href="https://github.com/SebasDevPy" target="_blank">Github</a></button>
+    <button class="miBoton4"><a href="Registrate.html" target="_blank">Registrate</a></button>
+    <form id="myForm">
+        <select id="mySelect">
+          <option value="Links.html">Links</option>
+          <option value="Acercade.html">Acerca de</option>
+          <option value="index.html">Pagina principal</option>
+          <option value="Contacto.html">Contacto</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          window.location.href = x;
+        }
+    </script>
+
+
     <h1 style="text-align: center;"><b>Trabajemos con HTML</b></h1>
     <br>
     <div style="display: flex; justify-content: center;">
